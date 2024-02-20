@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camila's house</title>
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Experience</a></li>
+                <li><a href="#services">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1>Hola! <br>I'm <span>Camila</span><br>a CS major<br> from Bolivia</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>An energetic and passionate individual motivated by her goals and dreams, who always seeks to expand her knowledge and develop different aspects of her life. Methodical in her work and responsible at fulfilling her duties. I also enjoy working in a team environment and consider myself an open-minded accountable person, disciplined, ordered with her habits and consistent with her commitments. I’m currently looking for an internship position for the summer, that will provide me with experience and aptitudes in my degree’s field</p>
+
+                <div class="tab-titles">
+
+                    <p class="tab-links active-link" onclick="opentab('skills')"><b>Skills</b></p>
+                    <p class="tab-links" onclick="opentab('Languages')"><b>Languages</b></p>
+                    <p class="tab-links" onclick="opentab('education')"><b>Education</b></p>
+
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span><i class="fa-regular fa-user-gear"></i> Programming Languages</span><br>Java / R studio / SQL / Python</li>
+                        <li><span><i class="fa-regular fa-user-gear"></i> Tools</span><br>Git, Scrum methodology </li>
+                        <li><span><i class="fa-regular fa-user-gear"></i> Important courses</span><br>Data Structures / Analysis of Algorithms / Object-oriented Programming / Distributed Systems / Databases Design / Statistical Programming
+                        <li><span><i class="fa-regular fa-user-gear"></i> Learning</span><br>Software Engineering / JavaScript </li>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Languages">
+                    <ul>
+                        <li><span><i class="fa-solid fa-globe"></i> Spanish</span><br> Native language</li>
+                        <li><span><i class="fa-solid fa-globe"></i> English</span><br>Proficient.<br> <em>TOEFL score:</em> 101</li>
+                        <li><span><i class="fa-solid fa-globe"></i> Portuguese</span><br>Intermediate</li>
+                        <li><span><i class="fa-solid fa-globe"></i> French</span><br>Elementary</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span><i class="fa-solid fa-graduation-cap"></i> University of Manitoba</span><br><span2> September 2020 — Present | Winnipeg, MB</span2> </li>
+                        <li><b>Computer Science Honours with a minor in Statistics</b></li>
+                        <li><i class="fa-solid fa-arrow-right"></i> Relevant Coursework<br>Distributed Systems, Object-Oriented programming, Human-Computer Interaction, Artificial Intelligence, Statistical programming, Software engineering, Data Structures and algorithms, Computer Systems, Database Management Systems, Discrete Mathematics</li>
+                        <li><span><i class="fa-solid fa-graduation-cap"></i> San Lorenzo High School </span><br><span2> February 2015 — November 2019 | Santa Cruz, Bolivia</span2></li>
+                        <li><i class="fa-solid fa-arrow-right"></i> 2019: Graduated with honors obtaining first place in Academic Performance</li>
+                        <li><i class="fa-solid fa-arrow-right"></i> 2018-2019: Active member of the social action committee (CAS)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Experience</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/tutor.png">
+                <div class="layer">
+                    <h3>Tutor at Science Students Association</h3>
+                    <h4>September 2022 — Present</h4>
+                    <p>Work with University students to improve their skills in calculus, statistics and programming subjects.</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/canu.png">
+                <div class="layer">
+                    <h3>Volunteer at CanU “Create You Own Personal Webpage” workshop</h3>
+                    <h4>October 2022 — November 2022</h4>
+                    <p>Helped to instructors in providing foundational understanding of HTML, CSS, and JavaScript to kids from Grade 5 & 6 while designing a webpage about their favourite topic.</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/cusec.png">
+                <div class="layer">
+                    <h3>Speakers Team at CUSEC</h3>
+                    <h4>July 2022 — January 2023</h4>
+                    <p>• Built a list of speakers, successfully securing prominent industry figures such as Grady Booch, an IBM Fellow known for creating the UML, and Matthew Pan, tech YouTuber with over 300k subs.
+                        • Created the talks schedule and moderated the “diversity panel” by directing questions to the speakers.</p>
+                </div>
+            </div>
+        </div>
+        <a href="javascript:void(0)" id="showExtracurriculars" class="btn">Outside Ifs and Loops</a>
+
+    </div>
+</div>
+<div id="extracurriculars" style="display: none;">
+    <div class="container">
+        <h1 class="sub-title">Extracurriculars</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/childcare.png">
+                <div class="layer">
+                    <h3>Childcare Assistant at Agassiz Childcare</h3>
+                    <h4>August 2023 — present</h4>
+                    <p>Skilled in providing attentive care, organizing activities, and maintaining a stimulating space for children while prioritizing children's well-being and development.</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/barista.png">
+                <div class="layer">
+                    <h3>Barista at IQ’s University Centre</h3>
+                    <h4>June 2022 — present</h4>
+                    <p>Preparing a variety of beverages, ensuring excellent customer service, operating equipment proficiently, handling transactions, managing inventory, and collaborating with team members in a fast-paced environment</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/powwow.png">
+                <div class="layer">
+                    <h3>Volunteer at Traditional Graduation Pow Wow</h3>
+                    <h4>May 2022 and April 2023</h4>
+                    <p>supporting event logistics, assisting with ceremonial practices, and engaging visitors to promote understanding and appreciation of Native American traditions. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-puzzle-piece"></i>
+                <h2>Akinator Game</h2>
+                <a href="javascript:void(0)"  onclick= "toggleParagraph('Akinator')" >More about</a>
+                <p id='Akinator'style="display: none;">Implemented binary trees in Java to create a game that guesses an object/animal that user is thinking by asking questions and if not guessed, the object is stored for the next round</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-table-cells"></i>
+                <h2>Sudoku Game</h2>
+                <a href="javascript:void(0)"  onclick= "toggleParagraph('Sudoku')" >More about</a>
+                <p id='Sudoku'style="display: none;">Developed a Sudoku game using processing programming language that detects any incorrect character, any duplicates in a row, a column, or a 3x3 sub grid and notifies the player about the error.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-chart-simple"></i>
+                <h2>STAT2150 Final project</h2>
+                <a href="javascript:void(0)"  onclick= "toggleParagraph('stats')" >More about</a>
+                <p id='stats' style="display: none;">Analyzed covid cases around Canada by implementing techniques learned throughout the course like: Reorganize data, create graphs, create functions to determine the MOM and MLE estimates, inverse of the CDF, mean, bias variance, bootstrapping, hypothesis tests and goodness-of-fit tests</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-link"></i>
+                <h2>Club portal Hackathon</h2>
+                <a href="javascript:void(0)"  onclick= "toggleParagraph('hackaton')" >More about</a>
+                <p id='hackaton'style="display: none;">Created a webpage that would serve as a portal for university students to find all the activities on campus that are being hosted by student clubs, based on the user interests.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-futbol"></i>
+                <h2>FIFA database</h2>
+                <a href="javascript:void(0)"  onclick= "toggleParagraph('fifa')" >More about</a>
+                <p id='fifa'style="display: none;">Modeled a FIFA players database, employed SQL to execute queries based on class-learned concepts. Contributed to optimizing data organization and query execution, fostering a deeper understanding of database management principles.</p>
+
+            </div>
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>Blockchain Peer Distributed Systems</h2>
+                <a href="javascript:void(0)"  onclick= "toggleParagraph('blockchain')" >More about</a>
+                <p id='blockchain'style="display: none;">Implemented topics such as TCP and UDP, consensus algorithms like proof-of-work through mining, messaging strategies, state handling and cryptographic properties by using hashlib for block hashing and validating the chain’s integrity, demonstrating proficiency in blockchain fundamentals and network synchronization.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact</h1>
+                <p><i class="fas fa-paper-plane"></i> <a href="mailto:camila.martinez2002@gmail.com"style="color: white">camila.martinez2002@gmail.com</a></p>
+                <p><i class="fas fa-phone-square-alt"></i> <a href="tel:+14312783212" style="color: white">+1 (431) 278-3212</a></p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/camila-martinez-ovando-22a9b21a3/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/cam.martinezx/"><i class="fab fa-instagram"></i></a>
+                </div>
+                <a href="images/Camila_Martinez_CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <h2>Get in touch</h2>
+                <form action="https://formsubmit.co/camila.martinez2002@gmail.com" method="POST">
+                    <input type="text" name="Name" placeholder="*Name" required>
+                    <input type="email" name="Email" placeholder="*Email" required>
+                    <input type="tel" name="Phone" placeholder="Phone" required>
+                    <textarea name="Message" rows="6" placeholder="Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+
+<script>
+</script>
+<script>
+    function toggleParagraph(paragraphId) {
+        var paragraph = document.getElementById(paragraphId);
+
+        if (paragraph.style.display === 'none') {
+            paragraph.style.display = 'block'; // Show the paragraph
+        } else {
+            paragraph.style.display = 'none'; // Hide the paragraph if it's already visible
+        }
+    }
+</script>
+<script>
+    document.getElementById('showExtracurriculars').addEventListener('click', function() {
+        var div = document.getElementById('extracurriculars');
+        div.style.display = 'block'; // Show the div when the button is clicked
+    });
+</script>
+</body>
+</html>
