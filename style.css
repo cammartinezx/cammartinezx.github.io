@@ -402,3 +402,22 @@ nav .fas{
     margin-top: -40px;
     display: block;
 }
+
+.blinking-cursor {
+    display: inline-block;
+    border-right: 2px solid white;
+    animation: blink 0.7s steps(2, start) infinite;
+  }
+
+  /* Blinking cursor effect */
+  @keyframes blink {
+    from {
+      border-color: white;
+    }
+    to {
+      border-color: white;
+    }
+  }
+
+
+  

@@ -26,8 +26,9 @@
             <i class="fas fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
-            <h1>Hola! <br>I'm <span>Camila</span><br>a CS major<br> from Bolivia</h1>
-        </div>
+            <h1 id="typewriter"></h1>
+          </div>
+        
     </div>
 </div>
 <!-- -----------about---------- -->
@@ -324,6 +325,64 @@
 <script>
     (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="8mPX3ARx9eEy2QeRpRhPF";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
     </script>
+
+<script>
+    const text = [
+      "Hola!", 
+      "I'm <span>Camila</span>", 
+      "a CS major", 
+      "from Bolivia"
+    ]; // Text split by lines
+    const typingSpeed = 200; // Typing speed in milliseconds per character
+    const lineDelay = 500; // Delay between lines
+    const element = document.getElementById("typewriter"); // Target element
+  
+    let lineIndex = 0; // Track current line
+    let charIndex = 0; // Track current character
+  
+    function typeText() {
+      if (lineIndex < text.length) {
+        const currentLine = text[lineIndex];
+        const isTag = currentLine[charIndex] === "<"; // Check if a tag starts
+        
+        if (isTag) {
+          // Handle the entire tag (like <span>) at once
+          const tagEndIndex = currentLine.indexOf(">", charIndex); // Find tag end
+          charIndex = tagEndIndex + 1; // Skip to the end of the tag
+        } else {
+          charIndex++; // Type one character at a time
+        }
+  
+        // Update HTML with completed lines and current text being typed
+        element.innerHTML =
+          text
+            .slice(0, lineIndex) // Completed lines
+            .join("<br>") +
+          "<br>" +
+          currentLine.substring(0, charIndex) + // Current line
+          '<span class="blinking-cursor"></span>'; // Add blinking cursor
+  
+        if (charIndex < currentLine.length) {
+          setTimeout(typeText, typingSpeed); // Continue typing current line
+        } else {
+          // Move to the next line after finishing the current one
+          charIndex = 0; // Reset character index
+          lineIndex++; // Move to next line
+          setTimeout(typeText, lineDelay); // Add delay before typing the next line
+        }
+      } else {
+        // Typing complete, remove cursor
+        element.innerHTML = text.join("<br>");
+      }
+    }
+  
+    // Start typing effect
+    typeText();
+  </script>
+  
+  
+  
+  
 
 </body>
 </html>
